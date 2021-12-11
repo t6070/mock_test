@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>mock</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="navi-menu-wrapper">
+      <div class="navi-menu-header-main">
+        <button
+          class="open-navi-button"
+          id="open-navi-button"
+          onclick="openMenu()"
+        >
+          <img class="open-menu-icon" src="./open_menu-icon.png" />
+        </button>
+        <p class="open-menu-label">メインメニュー</p>
+      </div>
+      <div class="navi-menu" id="navi-menu">
+        <div class="navi-menu-top" id="navi-menu-top">
+          <div class="navi-menu-top-header">
+            <p class="top-header-label">営業成績表</p>
+          </div>
+          <div class="navi-button-wrapper">
+            <div class="navi-button">営業成績表</div>
+            <div class="navi-button">営業成績表</div>
+            <div class="navi-button">SS別損益</div>
+            <div class="navi-button">SS別月別展開</div>
+            <div class="navi-button">(DB)SS別対比展開</div>
+            <div class="navi-button">粗利算出</div>
+            <div class="navi-button">実績作成</div>
+            <div class="navi-button">見通し作成</div>
+            <div class="navi-button">予算作成</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

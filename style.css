@@ -1,0 +1,145 @@
+.dropmenu {
+  *zoom: 1;
+  list-style-type: none;
+  width: 960px;
+  margin: 5px auto 30px;
+  padding: 0;
+}
+.dropmenu:before,
+.dropmenu:after {
+  content: "";
+  display: table;
+}
+.dropmenu:after {
+  clear: both;
+}
+.dropmenu li {
+  position: relative;
+  width: 20%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.dropmenu li a {
+  display: block;
+  margin: 0;
+  padding: 15px 0 11px;
+  background: #8a9b0f;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+}
+.dropmenu li ul {
+  list-style: none;
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.dropmenu li ul li {
+  width: 100%;
+}
+.dropmenu li ul li a {
+  padding: 13px 15px;
+  border-top: 1px solid #7c8c0e;
+  background: #6e7c0c;
+  text-align: left;
+}
+.dropmenu li:hover > a {
+  background: #6e7c0c;
+}
+.dropmenu li a:hover {
+  background: #616d0b;
+}
+
+#dropmenu li ul li {
+  overflow: hidden;
+  height: 0;
+  transition: 0.2s;
+}
+#dropmenu li:hover ul li {
+  overflow: visible;
+  height: 38px;
+}
+
+.navi-menu {
+  width: 95%;
+  height: 0;
+  border: 1px solid gray;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-top: 10px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.navi-menu-header-main {
+  height: 60px;
+  width: 100%;
+  background: #800000;
+  display: flex;
+  line-height: 60px;
+}
+
+.open-navi-button {
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+.open-menu-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.open-menu-label {
+  font-weight: bold;
+  color: white;
+  margin-left: 10px;
+}
+
+.navi-menu-wrapper {
+  width: 100%;
+}
+
+.navi-menu-top {
+  opacity: 0;
+  transition: 3s;
+}
+
+.navi-menu-top.show {
+  opacity: 1;
+  /* animation: show 1s linear 0s; */
+}
+
+.navi-menu-top-header {
+  background: #800000;
+}
+
+.top-header-label {
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.navi-button {
+  width: 200px;
+  height: 50px;
+  background: red;
+  margin: 5px;
+  color: white;
+  line-height: 50px;
+  text-align: left;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+
+.navi-button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
